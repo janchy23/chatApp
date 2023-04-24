@@ -1,0 +1,71 @@
+body {
+  background-color: $background-color;
+  font-family: $font-family;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  max-height: $max-height;
+  max-width: $max-width;
+  background-image: $background-image;
+  background-repeat: $background-repeat;
+  background-size: $background-size;
+  background-attachment: $background-attachment;
+}
+
+form {
+  display: flex;
+}
+
+.others,
+.me {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: $border-radius;
+  max-width: 90%;
+  width: fit-content;
+  word-break: break-word;
+}
+.others {
+  margin-right: auto;
+}
+
+.me {
+  text-align: right;
+  margin-left: auto;
+}
+
+#messages {
+  max-height: 90vh;
+  overflow-y: auto;
+  @include scrollbar;
+}
+
+b.message-username {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#message-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: solid 1px;
+  border-radius: $border-radius;
+  margin-right: 10px;
+  font-family: $font-family;
+}
+
+#send-button {
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-family: $font-family;
+}

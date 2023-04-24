@@ -1,0 +1,23 @@
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: $scrollbar-width;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $scrollbar-track-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $scrollbar-thumb-color;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $scrollbar-thumb-hover-color;
+  }
+}
+
+@mixin google-font($family) {
+  @import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+}
+
+@include google-font("RocknRoll One");
